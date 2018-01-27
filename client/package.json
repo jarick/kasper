@@ -1,0 +1,45 @@
+{
+  "name": "with-redux-reselect-recompose",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development PORT=3000 node server.js",
+    "build": "next build",
+    "prod": "cross-env NODE_ENV=production PORT=3000 node server.js",
+    "lint": "eslint --ext .js,.js ."
+  },
+  "engines": {
+    "node": "9.x.x"
+  },
+  "dependencies": {
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "express": "^4.16.2",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "next": "^4.2.3",
+    "next-redux-wrapper": "^1.0.0",
+    "prop-types": "^15.5.10",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.1",
+    "recompose": "^0.23.5",
+    "redux": "^3.6.0",
+    "redux-dataset": "^1.0.2",
+    "redux-form": "^7.2.1",
+    "reselect": "^3.0.1"
+  },
+  "author": "Phuc Nguyen Hoang",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "7.1.1",
+    "cross-env": "^5.0.1",
+    "eslint": "3.11.1",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "6.7.1",
+    "flow-bin": "^0.64.0",
+    "http-proxy-middleware": "^0.17.4"
+  }
+}
