@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { reduxForm, getFormValues, change } from 'redux-form'
 import { getDataSelector } from 'redux-dataset'
-import { compose, setDisplayName, pure, withProps, withState } from 'recompose'
+import { compose, setDisplayName, withProps, withState } from 'recompose'
 import { createSelector } from 'reselect'
 import get from 'lodash/get'
 import Component from '../components/product'
@@ -43,6 +43,5 @@ export default compose(
     (dispatch) => ({
       formActions: bindActionCreators({ change }, dispatch)
     })
-  ),
-  pure
+  )
 )(Component)
