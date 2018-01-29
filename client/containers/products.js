@@ -1,7 +1,7 @@
 // @flow
 
 import { connect } from 'react-redux'
-import { compose, setDisplayName, pure } from 'recompose'
+import { compose, setDisplayName } from 'recompose'
 import { createSelector } from 'reselect'
 import { getDataSelector } from 'redux-dataset'
 import Component from '../components/products'
@@ -18,6 +18,5 @@ export default compose(
         load
       })
     )
-  ),
-  pure
+  )
 )(Component)
